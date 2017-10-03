@@ -1,15 +1,22 @@
 def oxford_comma(array)
-  # if (array.length == 1)
-  #   return array.join
-  # elsif (array.length == 2)
-  #   return array.join(' and ')
-  # elsif (array.length == 3)
-  #   return array[0] + ', ' + array[1] + ', and ' + array[2]
-  # elsif (array.length > 3)
-  #   while array[i]
-  # end
+  if array.length == 2
+    return array.join(' and ')
+  elsif array.length > 2
+    last_element = array.pop
+    string = array.join(', ')
+    string << ', and ' + last_element
+  end
+  array.join(', ')
 end
 
+# ['frog']
+# frog
+
+# ['frog', 'spawn']
+# frog and spawn
+
+# ['frog', 'spawn', 'marsh']
+# frog, spawn and marsh
 
 # ['frog', 'spawn', 'marsh', 'mallow']
 # frog, spawn, marsh, and mallow
