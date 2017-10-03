@@ -6,6 +6,7 @@ def oxford_comma(array)
     string = array.join(', ')
     return string << ', and ' + last_element
   end
+  # cool quirk: join on array with single element returns original
   array.join(', ')
 end
 
