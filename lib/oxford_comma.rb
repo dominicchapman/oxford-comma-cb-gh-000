@@ -16,4 +16,3 @@ end
 
 # i.e. add comma to each item in array except last
 # plus, add ' and ' before last item in array
-
